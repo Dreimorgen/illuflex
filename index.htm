@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>illuflex</title>
+  <style type="text/css">
+    body { margin:0; }
+    p {
+      max-width:40px;
+    }
+  </style> 
+</head><body class="nojs">
+  <svg id="canvas" style="display:inline-block;position:absolute;z-index:-9999;top:0;left:0;" preserveAspectRatio='xMinYMin slice' viewbox="0 0 1000 750"></svg>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/snap.svg.js"></script>
+<script type="text/javascript" src="js/illus.js"></script>
+<script type="text/javascript" src="js/illuflex.js"></script>
+<script type="text/javascript">
+// instantiate
+var page = new Illuflex(
+{
+  renderConfig: {
+    wobble: true,
+    wobbleSpeed: 2000
+  },
+  illuConfig:  [
+]
+},
+{
+  atomObjs: "IlluSources.atomObjs",
+  constructorObjs: "IlluSources.constructorObjs"
+},
+'getIlluData'
+);
+</script>
+</html>
+
